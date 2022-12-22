@@ -1,0 +1,26 @@
+node-strip-eof (1.0.0-3) unstable; urgency=medium
+
+  * Trim trailing whitespace.
+  * Use secure copyright file specification URI.
+  * Bump debhelper from old 9 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Update Vcs-* headers from URL redirect.
+  * Use canonical URL in Vcs-Git.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Apply multi-arch hints.
+    + node-strip-eof: Add Multi-Arch: foreign.
+
+ -- Debian Janitor <janitor@jelmer.uk>  Sun, 29 Aug 2021 01:40:06 +0100
+
+node-strip-eof (1.0.0-2) unstable; urgency=medium
+
+  * Fix description (Thanks to Lars Wirzenius)
+
+ -- Pirate Praveen <praveen@debian.org>  Fri, 25 Nov 2016 21:54:12 +0530
+
+node-strip-eof (1.0.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #845409)
+
+ -- Pirate Praveen <praveen@debian.org>  Wed, 23 Nov 2016 12:32:27 +0530
