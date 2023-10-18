@@ -1,0 +1,27 @@
+Description: replace ava by tape
+Author: Yadd <yadd@debian.org>
+Forwarded: not-needed
+Last-Update: 2022-03-31
+
+--- a/test.js
++++ b/test.js
+@@ -1,4 +1,4 @@
+-import test from 'ava';
++import test from 'tape';
+ import stripFinalNewline from './index.js';
+ 
+ test('string', t => {
+@@ -8,6 +8,7 @@
+ 	t.is(stripFinalNewline('foo\r\n'), 'foo');
+ 	t.is(stripFinalNewline('foo\r'), 'foo');
+ 	t.is(stripFinalNewline('foo\n\r\n'), 'foo\n');
++	t.end();
+ });
+ 
+ test('buffer', t => {
+@@ -17,4 +18,5 @@
+ 	t.is(stripFinalNewline(Buffer.from('foo\r\n')).toString(), 'foo');
+ 	t.is(stripFinalNewline(Buffer.from('foo\r')).toString(), 'foo');
+ 	t.is(stripFinalNewline(Buffer.from('foo\n\r\n')).toString(), 'foo\n');
++	t.end();
+ });
